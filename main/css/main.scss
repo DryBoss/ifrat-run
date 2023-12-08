@@ -1,0 +1,44 @@
+//colors
+$text: #9FA2A6;
+$brightest: #F2F2F2;
+$middle: #404040;
+$darkest: #262626;
+$background: #FAF9F6;
+
+//default sets & designs
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: 'Cute Font', sans-serif;
+  color: $text;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: $background;
+}
+button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+}
+
+//header
+header {
+  background-color: #FF69B4;
+  color: $background;
+  text-align: center;
+}
+
+//footer
+footer {
+  background-color: #FF69B4;
+  color: $background;
+}
+
+//world
+body {
+  background-color: $background;
+}

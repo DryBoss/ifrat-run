@@ -1,0 +1,36 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Cute Font", sans-serif;
+  color: #9FA2A6;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #FAF9F6;
+}
+
+button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+}
+
+header {
+  background-color: #FF69B4;
+  color: #FAF9F6;
+  text-align: center;
+}
+
+footer {
+  background-color: #FF69B4;
+  color: #FAF9F6;
+}
+
+body {
+  background-color: #FAF9F6;
+}
