@@ -1,42 +1,61 @@
 *, *:before, *:after {
   box-sizing: inherit;
   margin: 0;
+  overflow: hidden;
+  user-select: none;
 }
 
 html {
   box-sizing: border-box;
   font-family: "Cute Font", sans-serif;
-  color: #9FA2A6;
-  font-size: 16px;
+  color: #FF69B4;
+  font-size: 32px;
 }
 
-a {
-  text-decoration: none;
-  color: #FAF9F6;
-}
-
-button {
-  font-family: "Press Start 2P", cursive;
-  font-size: 1rem;
+p {
+  font-weight: bold;
 }
 
 header {
-  background-color: #FF69B4;
-  color: #FAF9F6;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #FF69B4;
 }
 header h1 {
   font-size: 2rem;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #FF69B4;
-  color: #FAF9F6;
-}
-
 body {
   background-color: #FAF9F6;
+}
+
+.world {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  height: calc(var(--vh, 1vh) * 100 - 60px);
+}
+
+.restart {
+  padding: 0 16px;
+  background-color: #FAF9F6;
+  color: #FF69B4;
+  border: 5px solid #FF69B4;
+  border-radius: 50%;
+  font-family: "Cute Font", sans-serif;
+  position: absolute;
+  font-size: 1.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.ground {
+  position: absolute;
+  bottom: 25%;
 }
