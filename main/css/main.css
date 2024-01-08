@@ -9,46 +9,34 @@ html {
   box-sizing: border-box;
   font-family: "Cute Font", sans-serif;
   color: #FF69B4;
-  font-size: 32px;
+  font-size: 16px;
 }
 
 p {
   font-weight: bold;
 }
 
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #FF69B4;
-}
-header h1 {
-  font-size: 2rem;
-}
-
 body {
-  background-color: #FAF9F6;
-}
-
-.world {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 100vw;
-  height: calc(100vh - 60px);
-  height: calc(var(--vh, 1vh) * 100 - 60px);
+  color: #FF69B4;
+  background-color: #FAF9F6;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
-.restart {
-  padding: 0 16px;
-  background-color: #FAF9F6;
-  color: #FF69B4;
-  border: 5px solid #FF69B4;
-  border-radius: 50%;
-  font-family: "Cute Font", sans-serif;
+.game {
+  position: relative;
+  width: 100vw;
+  height: 200px;
+}
+
+.play {
   position: absolute;
-  font-size: 1.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hide {
@@ -56,6 +44,24 @@ body {
 }
 
 .ground {
+  --left: 0;
   position: absolute;
-  bottom: 25%;
+  width: 300%;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
+
+.char {
+  --bottom: 0;
+  position: absolute;
+  left: 1%;
+  height: 30%;
+  bottom: calc(var(--bottom) * 1%);
+}
+
+.obstacle {
+  position: absolute;
+  height: 30%;
+  left: calc(var(--left) * 1%);
+  bottom: 0;
 }
