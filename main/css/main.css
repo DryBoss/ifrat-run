@@ -18,7 +18,8 @@ p {
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   color: #FF69B4;
   background-color: #FAF9F6;
